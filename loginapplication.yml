@@ -1,7 +1,6 @@
-loginapplication:
-    amazon:
-        aws:
-            accesskey: fakekey
-            secretkey: fakesecretkey
-        dynamodb:
-            endpoint: http://localhost:8000
+amazon:
+    aws:
+        accesskey: fakekey
+        secretkey: fakesecretkey
+    dynamodb:
+        endpoint: http://localhost:8000
