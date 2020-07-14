@@ -1,0 +1,19 @@
+amazon:
+    aws:
+        accesskey: fakekey
+        secretkey: fakesecretkey
+    dynamodb:
+        endpoint: http://localhost:8000
+debug: true
+emailserviceurl: http://localhost:8005/qbthonEvents-emailservice/
+management:
+    health:
+        consul:
+            enabled: false
+    security:
+        enabled: false
+server:
+    port: 8002
+spring:
+    application:
+        name: qbthonEvents-service
