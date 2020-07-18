@@ -5,6 +5,14 @@ amazon:
     dynamodb:
         endpoint: http://localhost:8000
 debug: true
+logging:
+  level:
+    org.springframework: ERROR
+    com.qbthon: DEBUG
+  pattern:
+    console: "%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"
+    file: "%d %p %c{1.} [%t] %m%n"
+  file: eventapp.log
 emailserviceurl: http://localhost:8005/qbthonEvents-emailservice/
 management:
     health:
