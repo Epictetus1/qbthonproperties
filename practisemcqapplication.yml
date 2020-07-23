@@ -1,0 +1,24 @@
+amazon:
+    aws:
+        accesskey: fakekey
+        secretkey: fakesecretkey
+    dynamodb:
+        endpoint: http://localhost:8000
+bezkoder:
+    app:
+        jwtExpirationMs: 86400000
+        jwtSecret: secret
+logging:
+    file:
+        name: authenticationapp.log
+    level:
+        com:
+            qbthonservices:
+                authservices: DEBUG
+        org:
+            springframework: ERROR
+    pattern:
+        console: '%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n'
+        file: '%d %p %c{1.} [%t] %m%n'
+server:
+    port: 8071
